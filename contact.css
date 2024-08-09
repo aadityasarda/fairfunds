@@ -4,83 +4,95 @@
     --primary-color2 : #A6002F;
     --primary-color3 : #383b3f
 }
-@media (max-width: 1024px) {
-  
-    .contact .methods {
-      
-      flex-direction: column;
-      align-items: left;
-    }
-    
-  }
-  
-  
-  @media (max-width: 1150px) {
-      .apps{
-         flex-direction: column;
-      }
-   }
-  
-  
- 
-  @media (min-width: 1024px) {
-    .contact-left {
-        width: 50%;
-    }
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 .main{
     background-image: url('https://assets.splitwise.com/assets/core/facets.png');
     background-repeat: repeat-x;
-    height: 300px;
-    background-size: contain;
-    display: flex;
+    padding-top : 2rem;
+    padding-bottom: 2rem;
+    background-position: center 0px;
+    background-size: 1000px;
 }
-
+@media (min-width: 768px) {
+    .main {
+        background-size: 1250px;
+        background-position: center 0px;
+    }
+}
 .contact{
-    padding-left: 8rem;
+    padding-left: 2rem;
     padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-
-.contact h1{
-    margin-top: 2rem;
+@media (min-width: 640px) {
+    .contact {
+        max-width: 640px;
+    }
 }
 
-
+@media (min-width: 768px) {
+    .contact {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .contact {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .contact {
+        max-width: 1280px;
+    }
+}
+.contact h1{
+    margin-top: 1rem;
+    font-size: 1.75rem;
+}
+@media (min-width: 1024px) {
+    .contact h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .methods {
+        display: flex;
+    }
+}
 :after, :before {
     border: 0 solid;
     box-sizing: inherit;
-}
-
-.methods{
-    display: flex;
 }
 .contact-left{
     margin-top: 2rem;
     padding-bottom: 2rem;
 }
-
+@media (min-width: 1024px) {
+    .contact-left{
+        width: 50%;
+    }
+}
 .fa-solid{
    color:red;
 }
 .contact-left h3{
     font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 700;
 }
 .contact-left .link{
     font-size: 1.5rem;
+    line-height:normal;
 }
 .link a{
     color: var(--primary-color);
+    text-decoration: inherit;
+}
+.link .p1{
+    margin-top: 1.5rem;
+    line-height: normal;
 }
 .contact-right{
     margin-top: 2rem;
