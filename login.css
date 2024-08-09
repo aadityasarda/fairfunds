@@ -1,0 +1,166 @@
+:root{
+    --primary-color: #1CC29F;
+    --primary-color1 : #8656CD;
+    --primary-color2 : #A6002F;
+    --primary-color3 : #383b3f
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://assets.splitwise.com/assets/core/facets.png');
+    background-position: center 0px;
+    background-size: 1360px;
+    background-repeat: repeat-x;
+    min-height: 80vh;
+}
+.container1 {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: left;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.captcha-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+}
+
+.captcha input {
+    margin-right: 10px;
+}
+.captcha-expired {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 0 0 rgba(55, 59, 63, 0.5);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: none;
+
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: none;
+}
+.divider {
+    margin: 20px 0;
+    position: relative;
+    font-size: 14px;
+    color: #999;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 15%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.divider::before {
+    left: auto;
+}
+
+.divider::after {
+    right: auto;
+}
+
+.google-login {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.google-login:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 600px) {
+    .login-form {
+        padding: 15px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size:14px;
+    }    
+}
+::after ::before{
+    border: 0 solid;
+    box-sizing: inherit;
+}

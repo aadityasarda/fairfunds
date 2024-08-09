@@ -1,0 +1,104 @@
+:root{
+    --primary-color: #1CC29F;
+    --primary-color1 : #8656CD;
+    --primary-color2 : #A6002F;
+    --primary-color3 : #383b3f
+}
+@media (max-width: 1024px) {
+  
+    .contact .methods {
+      
+      flex-direction: column;
+      align-items: left;
+    }
+    
+  }
+  
+  
+  @media (max-width: 1150px) {
+      .apps{
+         flex-direction: column;
+      }
+   }
+  
+  
+ 
+  @media (min-width: 1024px) {
+    .contact-left {
+        width: 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    background-image: url('https://assets.splitwise.com/assets/core/facets.png');
+    background-repeat: repeat-x;
+    height: 300px;
+    background-size: contain;
+    display: flex;
+}
+
+.contact{
+    padding-left: 8rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contact h1{
+    margin-top: 2rem;
+}
+
+
+:after, :before {
+    border: 0 solid;
+    box-sizing: inherit;
+}
+
+.methods{
+    display: flex;
+}
+.contact-left{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.fa-solid{
+   color:red;
+}
+.contact-left h3{
+    font-size: 1.5rem;
+}
+.contact-left .link{
+    font-size: 1.5rem;
+}
+.link a{
+    color: var(--primary-color);
+}
+.contact-right{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.fa-solid{
+   color:red;
+}
+.contact-right h3{
+    font-size: 1.5rem;
+}
+.contact-right .link{
+    font-size: 1.5rem;
+}
+.p1{
+    margin-top: 1.5rem;
+}
+.footer{
+    margin-top: 5rem;
+}
