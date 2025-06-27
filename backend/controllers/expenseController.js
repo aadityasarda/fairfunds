@@ -2,7 +2,6 @@ const Expense = require("../models/Expense");
 const User = require("../models/User");
 const Group = require("../models/Group");
 const Settlement = require('../models/Settle');
-const Activity = require('../models/Activity'); 
 
 const addExpense = async (req, res) => {
   let { description, amount, paidBy, splitBetween, splitType, groupId } = req.body;
@@ -39,12 +38,6 @@ const addExpense = async (req, res) => {
       splitType,
     });
 
-    await Activity.create({
-      user: req.user.id,
-      type: 'add',
-      description: `${req.user.name} added an expense: ${description} for ₹${amount}`,
-      groupId
-    });
 
     res.status(201).json(expense);
   } catch (error) {
@@ -99,12 +92,6 @@ const updateExpense = async (req, res) => {
       return res.status(404).json({ message: "Expense not found" });
     }
 
-    await Activity.create({
-      user: req.user.id,
-      type: 'update',
-      description: `${req.user.name} updated the expense: ${description}`,
-      groupId: updatedExpense.groupId
-    });
 
     res.status(200).json(updatedExpense);
   } catch (err) {
@@ -132,12 +119,6 @@ const deleteExpense = async (req, res) => {
       { $set: { isOrphaned: true } }
     );
 
-    await Activity.create({
-      user: req.user.id,
-      type: 'delete',
-      description: `${req.user.name} deleted an expense`,
-      groupId: expense.groupId
-    });
 
     res.status(200).json({ message: 'Expense deleted and related settlements marked as orphaned' });
   } catch (err) {

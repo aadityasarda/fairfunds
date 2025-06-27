@@ -68,6 +68,7 @@ function SettleModal({ toUser, onClose, onSettled }) {
             placeholder={`Max: ₹${toUser?.maxAmount || 0}`}
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
+            WebkitAppearance="none"
           />
           <p className="hint">You currently owe ₹{toUser?.maxAmount.toFixed(2)}</p>
 
