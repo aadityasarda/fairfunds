@@ -1,0 +1,145 @@
+.expense-detail-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f9f9f9;
+  color: #111;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.expense-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+  color: #111;
+}
+
+.icon-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.icon-btn.red:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #c0392b;
+}
+
+.icon-btn-group {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.back-btn {
+  margin-right: auto;
+}
+
+.expense-detail-page h2 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.detail-section {
+  background: var(--surface);
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+}
+
+.section-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #111;
+  font-weight: 500;
+}
+
+.expense-detail-page ul {
+  padding-left: 1px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.expense-detail-page li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .expense-detail-page {
+    padding: 16px;
+    margin: 20px 12px;
+  }
+
+  .expense-detail-page h2 {
+    font-size: 20px;
+  }
+
+  .icon-btn {
+    padding: 6px;
+  }
+
+  .icon-btn-group {
+    gap: 8px;
+  }
+}
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #007bff22;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}

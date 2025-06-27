@@ -1,0 +1,79 @@
+@media (max-width: 600px) {
+  .invite-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .invite-form input,
+  .invite-form button {
+    width: 100%;
+  }
+
+  .invite-container h3 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+}
+
+.invite-container {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 100%;
+}
+
+.invite-container h3 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.invite-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.invite-form input {
+  flex-grow: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.invite-form input:focus {
+  border-color: #2d74da;
+}
+
+.invite-form button {
+  padding: 10px 16px;
+  background-color: #2d74da;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.invite-form button:hover {
+  background-color: #1c54b2;
+}
+
+.invite-message {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  white-space: pre-wrap;
+}

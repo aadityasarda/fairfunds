@@ -1,0 +1,53 @@
+.create-group-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.create-group-card {
+  padding: 30px;
+  width: 360px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.create-group-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-group-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-group-card input {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.create-group-card button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-group-card button:hover {
+  background-color: #218838;
+}
+
+.create-message {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}

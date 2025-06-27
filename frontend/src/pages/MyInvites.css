@@ -1,0 +1,51 @@
+.invite-page {
+  padding: 40px;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.invite-page h2 {
+  margin-bottom: 24px;
+}
+
+.invite-message {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: green;
+}
+
+.invite-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.invite-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.invite-card h3 {
+  margin: 0 0 8px;
+}
+
+.invite-card p {
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.invite-card button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.invite-card button:hover {
+  background-color: #0056b3;
+}
