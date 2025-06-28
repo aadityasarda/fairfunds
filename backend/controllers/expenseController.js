@@ -119,7 +119,6 @@ const deleteExpense = async (req, res) => {
       { $set: { isOrphaned: true } }
     );
 
-
     res.status(200).json({ message: 'Expense deleted and related settlements marked as orphaned' });
   } catch (err) {
     console.error('deleteExpense error:', err);
